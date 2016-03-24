@@ -1,44 +1,57 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
 
 android {
-  compileSdkVersion COMPILE_SDK_VERSION as int
-  buildToolsVersion BUILD_TOOLS_VERSION
+    compileSdkVersion COMPILE_SDK_VERSION as int
+    buildToolsVersion BUILD_TOOLS_VERSION
 
-  defaultConfig {
-    minSdkVersion 14
-    targetSdkVersion COMPILE_SDK_VERSION as int
-    versionCode VERSION_CODE as int
-    versionName VERSION_NAME
-  }
-
-  def secretFile = file("${rootDir}/secret.gradle")
-  if (secretFile.exists()) {
-    apply from: secretFile.absolutePath
-    signingConfigs {
-      release {
-        storeFile project.ext.storeFile
-        storePassword project.ext.storePassword
-        keyAlias project.ext.keyAlias
-        keyPassword project.ext.keyPassword
-      }
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion COMPILE_SDK_VERSION as int
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
     }
-  }
 
-  buildTypes {
-    release {
-      if (secretFile.exists()) {
-        signingConfig signingConfigs.release
-      }
-      minifyEnabled false
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    def secretFile = file("${rootDir}/secret.gradle")
+    if (secretFile.exists()) {
+        apply from: secretFile.absolutePath
+        signingConfigs {
+            release {
+                storeFile project.ext.storeFile
+                storePassword project.ext.storePassword
+                keyAlias project.ext.keyAlias
+                keyPassword project.ext.keyPassword
+            }
+        }
     }
-  }
-  lintOptions {
-    abortOnError false
-  }
+
+    buildTypes {
+        release {
+            if (secretFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
 }
 
 dependencies {
-  compile project(':library')
-  compile 'com.android.support:appcompat-v7:22.0.0'
+    // compile project(':library')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.firebase:firebase-client-android:2.5.2'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.ogaclejapan.arclayout:library:1.0.1@aar'
+    //compile 'com.google.android.gms:play-services-gcm:8.3.0'
 }

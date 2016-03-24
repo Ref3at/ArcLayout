@@ -1,37 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">ArcLayout</string>
-  <string name="app_license">License</string>
-  <string name="app_github">GitHub</string>
-  <string name="app_github_url"><![CDATA[https://github.com/ogaclejapan/ArcLayout]]></string>
+    <string name="app_name">Engineers Center</string>
 
-  <string name="reverse">Reverse</string>
+    <string name="reverse">Reverse</string>
 
-  <string name="title_center">Center</string>
-  <string name="title_left">Left</string>
-  <string name="title_right">Right</string>
-  <string name="title_top">Top</string>
-  <string name="title_top_left">Top Left</string>
-  <string name="title_top_right">Top Right</string>
-  <string name="title_bottom">Bottom</string>
-  <string name="title_bottom_left">Bottom Left</string>
-  <string name="title_bottom_right">Bottom Right</string>
-  <string name="title_advanced_freeangle">Advanced: Free angle</string>
-  <string name="title_advanced_tumblr">Advanced: Like a Tumblr</string>
-  <string name="title_advanced_path">Advanced: Like a Path</string>
+    <string name="title_center">Center</string>
+    <string name="title_left">Left</string>
+    <string name="title_right">Right</string>
+    <string name="title_top">Top</string>
+    <string name="title_top_left">Top Left</string>
+    <string name="title_top_right">Top Right</string>
+    <string name="title_bottom">Bottom</string>
+    <string name="title_bottom_left">Bottom Left</string>
+    <string name="title_bottom_right">Bottom Right</string>
+    <string name="title_advanced_freeangle">Advanced: Free angle</string>
+    <string name="title_advanced_tumblr">Advanced: Like a Tumblr</string>
+    <string name="title_advanced_path">Advanced: Like a Path</string>
 
-  <string name="note_center"><![CDATA[app:arc_origin=&quot;<b>center</b>&quot;<br/>Full arc of from 270 degrees]]></string>
-  <string name="note_left"><![CDATA[app:arc_origin=&quot;<b>left</b>&quot;<br/>Semi arc of from 270 degrees]]></string>
-  <string name="note_right"><![CDATA[app:arc_origin=&quot;<b>right</b>&quot;<br/>Semi arc of from 90 degrees]]></string>
-  <string name="note_top"><![CDATA[app:arc_origin=&quot;<b>top</b>&quot;<br/>Semi arc of from 0 degrees]]></string>
-  <string name="note_top_left"><![CDATA[app:arc_origin=&quot;<b>top|left</b>&quot;<br/>Quarter arc of from 0 degrees]]></string>
-  <string name="note_top_right"><![CDATA[app:arc_origin=&quot;<b>top|right</b>&quot;<br/>Quarter arc of from 90 degrees]]></string>
-  <string name="note_bottom"><![CDATA[app:arc_origin=&quot;<b>bottom</b>&quot;<br/>Semi arc of from 180 degrees]]></string>
-  <string name="note_bottom_left"><![CDATA[app:arc_origin=&quot;<b>bottom|left</b>&quot;<br/>Quarter arc of from 270 degrees]]></string>
-  <string name="note_bottom_right"><![CDATA[app:arc_origin=&quot;<b>bottom|right</b>&quot;<br/>Quarter arc of from 180 degrees]]></string>
-  <string name="note_advanced_freeangle"><![CDATA[app:arc_freeAngle=&quot;<b>true</b>&quot;<br/>Can be free angle to place the child view]]></string>
-  <string name="note_advanced_tumblr">Try pressing the button</string>
-  <string name="note_advanced_path">Try pressing the button</string>
+    <string name="note_center"><![CDATA[app:arc_origin=&quot;<b>center</b>&quot;<br/>Full arc of from 270 degrees]]></string>
+    <string name="note_left"><![CDATA[app:arc_origin=&quot;<b>left</b>&quot;<br/>Semi arc of from 270 degrees]]></string>
+    <string name="note_right"><![CDATA[app:arc_origin=&quot;<b>right</b>&quot;<br/>Semi arc of from 90 degrees]]></string>
+    <string name="note_top"><![CDATA[app:arc_origin=&quot;<b>top</b>&quot;<br/>Semi arc of from 0 degrees]]></string>
+    <string name="note_top_left"><![CDATA[app:arc_origin=&quot;<b>top|left</b>&quot;<br/>Quarter arc of from 0 degrees]]></string>
+    <string name="note_top_right"><![CDATA[app:arc_origin=&quot;<b>top|right</b>&quot;<br/>Quarter arc of from 90 degrees]]></string>
+    <string name="note_bottom"><![CDATA[app:arc_origin=&quot;<b>bottom</b>&quot;<br/>Semi arc of from 180 degrees]]></string>
+    <string name="note_bottom_left"><![CDATA[app:arc_origin=&quot;<b>bottom|left</b>&quot;<br/>Quarter arc of from 270 degrees]]></string>
+    <string name="note_bottom_right"><![CDATA[app:arc_origin=&quot;<b>bottom|right</b>&quot;<br/>Quarter arc of from 180 degrees]]></string>
+    <string name="note_advanced_freeangle"><![CDATA[app:arc_freeAngle=&quot;<b>true</b>&quot;<br/>Can be free angle to place the child view]]></string>
+    <string name="note_advanced_tumblr">Try pressing the button</string>
+    <string name="note_advanced_path">Try pressing the button</string>
+
+    <string name="up">upload</string>
+    <string name="about">About</string>
+    <string name="action_edit">Edit</string>
+    <string name="prev">Preview</string>
+    <string name="add">Add</string>
+
+    <string name="empty_list">no data available!</string>
+    <string name="empty_list2">no network connection to fetch data from the server!</string>
+
+
+    <string-array name="Y0">
+        <item>رياضيات</item>
+        <item>فيزياء</item>
+        <item>ميكانيكا</item>
+        <item>برمجة</item>
+        <item>هندسة انتاج</item>
+        <item>رسم</item>
+        <item>حقوق انسان</item>
+    </string-array>
+
+    <string-array name="Y10">
+        <item>رياضيات</item>
+        <item>اساسيات</item>
+        <item>قياسات</item>
+        <item>دوائر رقمية (ديجيتال)</item>
+        <item>اختبارات</item>
+        <item>انسانيات</item>
+    </string-array>
+
+    <string-array name="Y11">
+        <item>ميكانيكا</item>
+        <item>مقاومة</item>
+        <item>موائع</item>
+        <item>تطبيقات حاسب</item>
+        <item>هندسة انتاج</item>
+        <item>تقارير</item>
+        <item>رسم</item>
+    </string-array>
+
+    <string-array name="Y12">
+        <item>رياضيات</item>
+        <item>قياسات</item>
+        <item>موائع وهندسة حرارية</item>
+        <item>اساسات الكترونية</item>
+        <item>دوائر كهربية</item>
+        <item>انسانيات</item>
+    </string-array>
+
+    <string-array name="Y13">
+        <item>رياضة</item>
+        <item>تركيبات كهربية</item>
+        <item>تركيبات ميكانيكية</item>
+        <item>مساحة</item>
+        <item>تقارير</item>
+        <item>انشاءات</item>
+        <item>مقاومة</item>
+    </string-array>
+
+    <string-array name="Y20">
+        <item>دوائر الكترونية</item>
+        <item>تحكم ألي (كنترول )</item>
+        <item>نظم خطية وشبكات</item>
+        <item>الات كهربية</item>
+        <item>تطبيقات حاسب (برمجة)</item>
+        <item>احصاء</item>
+    </string-array>
+
+    <string-array name="Y21">
+        <item>ميكانيكا موائع 2</item>
+        <item>هندسة الكترونية</item>
+        <item>احصاء</item>
+        <item>هندسة الكترونية</item>
+        <item>نظرية ماكينات</item>
+        <item>انتقال حرارة</item>
+    </string-array>
+
+    <string-array name="Y22">
+        <item>الات كهربية</item>
+        <item>قوى كهربية</item>
+        <item>معالجات دقيقة</item>
+        <item>اختبارات</item>
+        <item>احصاء</item>
+        <item>برمجة</item>
+    </string-array>
+
+    <string-array name="Y23">
+        <item>تشييد</item>
+        <item>طبوغرافيا</item>
+        <item>تربة</item>
+        <item>هيدرولوجي</item>
+        <item>نظم بناء</item>
+        <item>خرسـانة</item>
+    </string-array>
+
+    <string-array name="Y30">
+        <item>موجات كهرومغناطيسية</item>
+        <item>اتصالات (2)</item>
+        <item>بصرية </item>
+        <item>ميكرو بروسيسور (معالجات دقيقة )</item>
+        <item>اختبارات</item>
+        <item>مقرر اختياري</item>
+    </string-array>
+
+    <string-array name="Y31">
+        <item>ديناميكا غازات</item>
+        <item>احتراق</item>
+        <item>الات كهربية</item>
+        <item>تصميم ماكينات</item>
+        <item>انسانيات</item>
+        <item>مقرر اختياري (وقود)</item>
+        <item>مقرر اختياري (أنابيب)</item>
+        <item>مقرر اختياري (تحلية مياه)</item>
+    </string-array>
+
+    <string-array name="Y32">
+        <item>قوى كهربية</item>
+        <item>الكترونات قوى</item>
+        <item>تحكم الي </item>
+        <item>نظم حماية</item>
+        <item>آلات كهربيه</item>
+        <item>مقرر (الحمايه)</item>
+    </string-array>
+
+    <string-array name="Y33">
+        <item>تربة</item>
+        <item>اساسات</item>
+        <item>هيدروليكا</item>
+        <item>منشأت خرسانية</item>
+        <item>نقل ومرور</item>
+        <item>تقارير فنية</item>
+    </string-array>
+
+    <string-array name="Y40">
+        <item>معالجة اشارات رقمية</item>
+        <item>نظم اتصالات متقدمة</item>
+        <item>دوائر متكاملة</item>
+        <item>GSM</item>
+        <item>Image Processing</item>
+    </string-array>
+
+    <string-array name="Y41">
+        <item>محطات قوى</item>
+        <item>تحكم</item>
+        <item>انسانيات</item>
+        <item>مقرر اختياري (1)</item>
+        <item>مقرر اختياري (2)</item>
+        <item>مقرر اختياري (3)</item>
+    </string-array>
+
+    <string-array name="Y42">
+        <item>تحكم الي لنظم القوى</item>
+        <item>ادارة مشروعات</item>
+        <item>اختبارات</item>
+        <item>تحكم ألى للآلات</item>
+        <item>مقرر إختياري</item>
+
+    </string-array>
+
+    <string-array name="Y43">
+        <item>خرسانة</item>
+        <item>معدنية</item>
+        <item>موانئ</item>
+        <item>صحية</item>
+        <item>مقرر اختياري (1)</item>
+        <item>مقرر اختياري (2)</item>
+        <item>مقرر اختياري (3)</item>
+    </string-array>
+
+
+    <string-array name="Y000">
+        <item>تكامل</item>
+        <item>تحليليه</item>
+    </string-array>
+
+    <string-array name="Y001">
+        <item>كهربيه</item>
+        <item>ضوئيه</item>
+    </string-array>
+
+    <string-array name="Y100">
+        <item>Complex</item>
+        <item>Special</item>
+    </string-array>
+
+    <string-array name="Y120">
+        <item>Complex</item>
+        <item>Specila</item>
+    </string-array>
+
+    <string-array name="Y122">
+        <item>موائع</item>
+        <item>حراريه/ثرمو</item>
+    </string-array>
+
+    <string-array name="Y114">
+        <item>د/منى</item>
+        <item>د/توكل</item>
+    </string-array>
+
+    <string-array name="Y220">
+        <item>د/عيد</item>
+        <item>د/عبدالفتاح</item>
+    </string-array>
+
+    <string-array name="Y221">
+        <item>د/سحر</item>
+        <item>د/مجدى السعداوى</item>
+    </string-array>
+
+    <string-array name="Y203">
+        <item>د/عبدالرحمن</item>
+        <item>د/عيد</item>
+    </string-array>
+
+    <string-array name="Y320">
+        <item>د/صبحى</item>
+        <item>د/عدوي</item>
+    </string-array>
+
+    <string-array name="Y321">
+        <item>د/سعيد إسكندر</item>
+        <item>د/عبدالفتاح</item>
+    </string-array>
+
+    <string-array name="Y325">
+        <item>د/جبر</item>
+        <item>د/ابراهيم بدران</item>
+    </string-array>
+
+    <string-array name="Y312">
+        <item>د/محمد السعيد</item>
+        <item>الفرع التانى</item>
+    </string-array>
+
+    <string-array name="Y420">
+        <item>د/احمد يوسف</item>
+        <item>د/إبراهيم بدران</item>
+    </string-array>
+
+    <string-array name="Y305">
+        <item>د/حسن سليمان</item>
+        <item>د/محمد عبدالعظيم</item>
+    </string-array>
+
+    <string-array name="Y999">
+        <item>الفرع الاول</item>
+        <item>الفرع التانى</item>
+    </string-array>
+
 
 </resources>
+
